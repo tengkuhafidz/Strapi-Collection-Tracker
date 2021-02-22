@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/beneficiaries",
+      "handler": "beneficiary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/beneficiaries/count",
+      "handler": "beneficiary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/beneficiaries/:id",
+      "handler": "beneficiary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/beneficiaries",
+      "handler": "beneficiary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/beneficiaries/:id",
+      "handler": "beneficiary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/beneficiaries/:id",
+      "handler": "beneficiary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

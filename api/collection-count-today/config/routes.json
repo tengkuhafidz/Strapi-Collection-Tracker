@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/collection-count-today",
+      "handler": "collection-count-today.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/collection-count-today",
+      "handler": "collection-count-today.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/collection-count-today",
+      "handler": "collection-count-today.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

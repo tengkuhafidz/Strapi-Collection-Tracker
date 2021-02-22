@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "collection_count_todays",
+  "info": {
+    "name": "maxCollectionCount",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "maxCount": {
+      "type": "integer"
+    }
+  }
+}

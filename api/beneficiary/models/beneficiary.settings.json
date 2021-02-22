@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beneficiaries",
+  "info": {
+    "name": "Beneficiary",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "nric": {
+      "type": "string"
+    },
+    "telefon": {
+      "type": "integer"
+    },
+    "alamat": {
+      "type": "text"
+    },
+    "jenis_kediaman": {
+      "type": "enumeration",
+      "enum": [
+        "gelandangan",
+        "bilik_sewa",
+        "rumah_sewa",
+        "rumah_sendiri",
+        "lain"
+      ],
+      "required": false,
+      "private": false
+    },
+    "jenis_kediaman_lain": {
+      "type": "string"
+    },
+    "boleh_masak": {
+      "type": "boolean"
+    },
+    "nama_waris": {
+      "type": "string"
+    },
+    "telefon_waris": {
+      "type": "string"
+    },
+    "sebab_mengambil_makanan": {
+      "type": "enumeration",
+      "enum": [
+        "lapar",
+        "hanya_seorang_dua_di_rumah",
+        "tiada_pendapatan",
+        "tiada_bahan",
+        "tiada_peralatan"
+      ]
+    },
+    "kekerapan_mengambil_makanan": {
+      "type": "enumeration",
+      "enum": [
+        "sekali_sehari",
+        "dua_kali_sehari",
+        "lebih"
+      ]
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "perlu_bahan_mentah": {
+      "type": "boolean"
+    },
+    "perlu_dapur_gas": {
+      "type": "boolean"
+    },
+    "perlu_tong_gas": {
+      "type": "boolean"
+    },
+    "keperluan_peralatan_masak_lain": {
+      "type": "text"
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "beneficiary"
+    },
+    "rekod_medikal": {
+      "type": "text"
+    }
+  }
+}

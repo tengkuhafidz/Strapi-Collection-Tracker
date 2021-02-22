@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "name": "Collection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "units": {
+      "type": "integer"
+    },
+    "beneficiary": {
+      "via": "collections",
+      "model": "beneficiary"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "collections"
+    },
+    "lokasi": {
+      "type": "text"
+    }
+  }
+}
