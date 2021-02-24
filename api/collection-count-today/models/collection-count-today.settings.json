@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "collection_count_todays",
   "info": {
-    "name": "maxCollectionCount",
+    "name": "maxCollection",
     "description": ""
   },
   "options": {

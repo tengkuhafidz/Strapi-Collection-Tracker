@@ -12,7 +12,8 @@
   },
   "attributes": {
     "nama": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "nric": {
       "type": "string"
