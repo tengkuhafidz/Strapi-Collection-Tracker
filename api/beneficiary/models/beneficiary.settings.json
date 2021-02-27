@@ -89,10 +89,6 @@
     "keperluan_peralatan_masak_lain": {
       "type": "text"
     },
-    "collections": {
-      "collection": "collection",
-      "via": "beneficiary"
-    },
     "rekod_medikal": {
       "type": "text"
     }

@@ -14,9 +14,9 @@
     "units": {
       "type": "integer"
     },
-    "beneficiary": {
+    "customer": {
       "via": "collections",
-      "model": "beneficiary"
+      "model": "customer"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
