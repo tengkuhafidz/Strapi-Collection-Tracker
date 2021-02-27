@@ -1,0 +1,2 @@
+# command to run the loading to postgres, will need to change the source from the path
+copy customers(id, ruj, ref, name, official_id, housing_type, dob, gender, race, telephone, address, known_illness) from '/Users/jeff/dev/Strapi-Collection-Tracker/data/sri_lanang.csv' DELIMITER ',' CSV HEADER;

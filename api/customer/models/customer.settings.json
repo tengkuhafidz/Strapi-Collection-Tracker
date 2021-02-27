@@ -1,0 +1,138 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "official_id": {
+      "type": "string"
+    },
+    "ruj": {
+      "type": "enumeration",
+      "enum": [
+        "T",
+        "G",
+        "S",
+        "R"
+      ],
+      "required": true,
+      "default": "T"
+    },
+    "ref": {
+      "type": "string",
+      "private": true,
+      "unique": true
+    },
+    "dob": {
+      "type": "date"
+    },
+    "address": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Lelaki",
+        "Perempuan"
+      ],
+      "required": true
+    },
+    "race": {
+      "type": "enumeration",
+      "enum": [
+        "Melayu",
+        "Cina",
+        "India",
+        "Lain"
+      ],
+      "default": "Melayu",
+      "required": true
+    },
+    "district": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "housing_type": {
+      "type": "enumeration",
+      "enum": [
+        "Tidak_Ada",
+        "Bilik_Sewa",
+        "Rumah_Sewa",
+        "Rumah_Sendiri"
+      ],
+      "default": "Tidak_Ada",
+      "required": false
+    },
+    "cooking_needs": {
+      "type": "enumeration",
+      "enum": [
+        "Tidak_Masak",
+        "Bahan_Mentah",
+        "Dapur_Gas",
+        "Tong_Gas",
+        "Lain_Lain"
+      ]
+    },
+    "other_cooking_needs": {
+      "type": "string"
+    },
+    "collection_frequency": {
+      "type": "enumeration",
+      "enum": [
+        "Satu_Kali",
+        "Dua_Kali",
+        "Lebih_Dari_Dua_Kali"
+      ]
+    },
+    "collection_reason": {
+      "type": "enumeration",
+      "enum": [
+        "Lapar",
+        "Hanya_Satu_Dua_Orang_Di_Rumah",
+        "Tiada_Pendapatan",
+        "Tiada_Bahan_Mentah_Masak",
+        "Tiada_Peralatan_Masak"
+      ]
+    },
+    "nok_name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "nok_telephone_number": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "known_illness": {
+      "type": "text"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "telephone": {
+      "type": "string"
+    }
+  }
+}
