@@ -8,15 +8,15 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "units": {
       "type": "integer"
     },
     "customer": {
-      "via": "collections",
-      "model": "customer"
+      "model": "customer",
+      "via": "collections"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
