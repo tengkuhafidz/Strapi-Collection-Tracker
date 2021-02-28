@@ -38,11 +38,6 @@
       "required": true,
       "default": "T"
     },
-    "ref": {
-      "type": "string",
-      "private": true,
-      "unique": true
-    },
     "dob": {
       "type": "date"
     },
