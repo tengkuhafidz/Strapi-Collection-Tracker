@@ -30,10 +30,12 @@
     "ruj": {
       "type": "enumeration",
       "enum": [
-        "T",
         "G",
         "S",
-        "R"
+        "R",
+        "O",
+        "T",
+        "I"
       ],
       "required": true,
       "default": "T"
@@ -69,17 +71,6 @@
     },
     "city": {
       "type": "string"
-    },
-    "housing_type": {
-      "type": "enumeration",
-      "enum": [
-        "Tidak_Ada",
-        "Bilik_Sewa",
-        "Rumah_Sewa",
-        "Rumah_Sendiri"
-      ],
-      "default": "Tidak_Ada",
-      "required": false
     },
     "cooking_needs": {
       "type": "enumeration",
@@ -130,8 +121,8 @@
       "type": "string"
     },
     "collections": {
-      "via": "customer",
-      "collection": "collection"
+      "collection": "collection",
+      "via": "customer"
     }
   }
 }

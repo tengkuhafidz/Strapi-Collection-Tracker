@@ -15,8 +15,8 @@
       "type": "integer"
     },
     "customer": {
-      "model": "customer",
-      "via": "collections"
+      "via": "collections",
+      "model": "customer"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
