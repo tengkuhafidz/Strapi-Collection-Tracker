@@ -123,6 +123,15 @@
     "collections": {
       "collection": "collection",
       "via": "customer"
+    },
+    "dietary_requirement": {
+      "type": "enumeration",
+      "enum": [
+        "halal",
+        "vegetarian",
+        "others",
+        "none"
+      ]
     }
   }
 }
